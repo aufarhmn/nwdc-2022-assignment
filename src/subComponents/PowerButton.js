@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { PowerBtn } from '../components/AllSvgs'
 
-
 const Power = styled.button`
 position: fixed;
 top: 2rem;

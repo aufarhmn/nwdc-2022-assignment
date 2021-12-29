@@ -49,6 +49,16 @@ text-decoration: none;
 z-index:1;
 `
 
+const TECH = styled(NavLink)`
+color: ${props => props.click ? props.theme.body : props.theme.text};
+position: absolute;
+top: 50%;
+left: calc(1rem + 2vw);
+transform: translate(-50%, -50%) rotate(-90deg) ;
+text-decoration: none;
+z-index:1;
+`
+
 const SKILLS = styled(NavLink)`
 color: ${props => props.theme.text};
 text-decoration: none;
@@ -81,7 +91,6 @@ transition: all 1s ease;
 &>:first-child{
     animation: ${rotate} infinite 1.5s linear;
 }
-
 &>:last-child{
     display: ${props => props.click ? 'none' :'inline-block'  };
     padding-top: 1rem;
@@ -130,6 +139,23 @@ const Main = () => {
                     Motivation.
                 </motion.h2>
             </MOTIVATION>
+            
+            <TECH to="/tech" click={+click}>
+                <motion.h2
+                initial={{
+                    y:-200,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                animate={{
+                    y:0,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                 whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                >
+                    Tech Stack.
+                </motion.h2>
+            </TECH>
 
             <BottomBar>
 
@@ -163,7 +189,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills.
+                    My Experience.
                 </motion.h2>
             </SKILLS>
 

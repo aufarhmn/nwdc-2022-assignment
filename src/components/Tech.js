@@ -5,32 +5,17 @@ import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitle'
-import astronaut from '../assets/Images/spaceman.png'
+import react from '../assets/Images/react-native.png'
+import framer from '../assets/Images/framer.png'
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
 height:100vh;
 position: relative;
-overflow: hidden;
-`
-
-const float = keyframes`
-0% { transform: translateY(-10px) }
-50% { transform: translateY(15px) translateX(15px) }
-100% { transform: translateY(-10px) }
-`
-
-const Spaceman = styled.div`
-position: absolute;
-top: 10%;
-right: 5%;
-width: 20vw;
-animation: ${float} 4s ease infinite;
-img{
-    width: 100%;
-    height: auto;
-}
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 `
 
 const Main =  styled.div`
@@ -45,31 +30,23 @@ const Main =  styled.div`
   justify-content: center;
   align-items: center;
   font-size: calc(0.6rem + 1vw);
- backdrop-filter: blur(4px);
-  
+  backdrop-filter: blur(4px);
   position: absolute;
-  left: calc(5rem + 5vw);
   top: 10rem;
   font-family: 'Ubuntu Mono', monospace;
   font-style: italic;
 `
 
-const About = () => {
+const Tech = () => {
     return (
         <ThemeProvider theme={DarkTheme}>
         <Box>
         <SocialIcons theme='dark'/>
         <PowerButton />
-        <ParticleComponent theme='dark' />
-        <Spaceman>
-            <img src={astronaut} alt="spaceman" />
-        </Spaceman>    
+        <ParticleComponent theme='dark' />   
         <Main>
-        I'm Information Engineering Undergraduate Student from Universitas Gadjah Mada.
-        <br /> <br/>
-        I'm interested in Artificial Intelligence and Machine Learning.
-        <br/> <br/>
-        I'm fully motivated person when it comes to my passion. Feel free to connect with me through social media links.
+        <img src={react} alt="react" width="200px" />
+        <img src={framer} alt="framer" width="300px" />
         </Main>
         <BigTitle text="ABOUT" top="10%" left="5%" />
         </Box>
@@ -77,4 +54,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Tech
