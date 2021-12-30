@@ -3,7 +3,7 @@
 This repository contains final code for Open Recruitment NWDC 2022 <br />
 
 Some 'cool' feaures on this website:
-1. Main Page with picture of me
+1. Main Page with animation of me
 2. Tech Stack
 3. Social Media Links
 4. About Me
