@@ -1,6 +1,15 @@
-# OPEN RECRUITMENT NWDC 2022
+# Open Recruitment NWDC 2022
 
 This repository contains final code for Open Recruitment NWDC 2022 <br />
+
+Some 'cool' feaures on this website:
+1. Main Page with picture of me
+2. Tech Stack
+3. Social Media Links
+4. About Me
+5. My Experience
+6. About NWDC (Motivation and Expectation)
+7. Background Music (Click Soundbar at Top Left)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

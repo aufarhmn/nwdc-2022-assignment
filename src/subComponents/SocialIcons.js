@@ -3,7 +3,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import {  Github, Instagram, Linkedin } from '../components/AllSvgs'
-import {DarkTheme} from '../components/Themes'
+import { DarkTheme } from '../components/Themes'
 
 const Icons = styled.div`
 display: flex;

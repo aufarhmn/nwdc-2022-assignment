@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
-import {DarkTheme} from './Themes';
+import { DarkTheme } from './Themes';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';

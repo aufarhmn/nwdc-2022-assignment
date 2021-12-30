@@ -1,11 +1,13 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import styled, { ThemeProvider } from 'styled-components'
-import {lightTheme} from './Themes';
+import { lightTheme } from './Themes';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitle'
 import Gamaforce from '../assets/Images/gamaforce.png'
+import SSC from '../assets/Images/ssc.png'
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -55,17 +57,54 @@ const MySkills = () => {
         <SocialIcons theme='light'/>
         <PowerButton />
         <ParticleComponent theme='light' />
-        <Main>
+        <Main>  
         <Title>
-            <img src={Gamaforce} alt="Gamaforce" width="230px" />
+        <motion.div
+            initial={{transform:"scale(0)"}}
+            animate={{scale:[0,1,1.5,1]}}
+            transition={{type:'spring', duration:1, delay:1}}
+            >
+                <img src={ SSC } alt="SSC" width="240px" />
+            </motion.div>
         </Title>
         <Description>
-        <br />
-        Software Programmer 
-        <br />
-        at GAMAFORCE UGM
-        <br />
-        2021 - 2023
+        <motion.div
+            initial={{transform:"scale(0)"}}
+            animate={{scale:[0,1,1.5,1]}}
+            transition={{type:'spring', duration:1, delay:1}}
+            >
+            <br />
+            Research Mentor
+            <br />
+            at SMADA SCIENCE CLUB
+            <br />
+            2019 - 2021
+        </motion.div>
+        </Description>
+        </Main>
+        <Main>
+        <Title>
+        <motion.div
+            initial={{transform:"scale(0)"}}
+            animate={{scale:[0,1,1.5,1]}}
+            transition={{type:'spring', duration:1, delay:1}}
+            >
+            <img src={ Gamaforce } alt="Gamaforce" width="230px" />
+            </motion.div>
+        </Title>
+        <Description>
+        <motion.div
+            initial={{transform:"scale(0)"}}
+            animate={{scale:[0,1,1.5,1]}}
+            transition={{type:'spring', duration:1, delay:1}}
+            >
+            <br />
+            Software Programmer 
+            <br />
+            at GAMAFORCE UGM
+            <br />
+            2021 - 2023
+        </motion.div>
         </Description>
         </Main>
             <BigTitle text="EXPERIENCE" top="80%" right="30%" />

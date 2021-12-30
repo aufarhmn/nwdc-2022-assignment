@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import styled, { keyframes, ThemeProvider } from 'styled-components'
-import {DarkTheme} from './Themes';
+import styled, { ThemeProvider } from 'styled-components'
+import { DarkTheme } from './Themes';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
@@ -61,7 +61,7 @@ const Tech = () => {
               <img src={framer} alt="framer" width="300px" />
             </motion.div>
         </Main>
-        <BigTitle text="ABOUT" top="10%" left="5%" />
+        <BigTitle text="TECH STACK" top="10%" left="5%" />
         </Box>
         </ThemeProvider>
     )
