@@ -2,8 +2,11 @@
 
 This repository contains final code for Open Recruitment NWDC 2022 <br />
 
-# DEMO 👇👇
+# Demo 
+
 https://nwdc-2022-assignment.vercel.app/
+
+# Overview 
 
 Some 'cool' feaures on this website:
 1. Main Page with animation of me
